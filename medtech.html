@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Hussain · Business Analyst — MedTech & Pharma Focus</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+      @media print {
+        nav, .no-print, #talkModal { display: none !important; }
+        body { background: white; }
+      }
+    </style>
+  </head>
+  <body class="text-slate-800 bg-slate-50 selection:bg-blue-100 selection:text-blue-900">
+<!-- Navigation -->
+<header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-blue-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <a href="#hero" class="text-xl font-extrabold">MH</a>
+    <nav class="hidden md:flex gap-6 text-sm font-medium">
+      <a href="#summary" class="hover:text-blue-600">Summary</a>
+      <a href="#projects" class="hover:text-blue-600">Projects</a>
+      <a href="#skills" class="hover:text-blue-600">Skills</a>
+      <a href="#timeline" class="hover:text-blue-600">Experience</a>
+      <a href="#why" class="hover:text-blue-600">Why the Pharma industry</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5 group p-2" aria-label="Toggle navigation">
+      <span class="block w-6 h-0.5 bg-slate-800 group-hover:bg-blue-700"></span>
+      <span class="block w-6 h-0.5 bg-slate-800 group-hover:bg-blue-700"></span>
+      <span class="block w-6 h-0.5 bg-slate-800 group-hover:bg-blue-700"></span>
+    </button>
+  </div>
+  <nav id="mobileMenu"
+      class="md:hidden absolute top-full inset-x-0 bg-white shadow-md p-4 flex flex-col gap-4 text-sm font-medium hidden">
+    <a href="#summary" class="block py-2 px-4 rounded hover:bg-blue-50">Summary</a>
+    <a href="#projects" class="block py-2 px-4 rounded hover:bg-blue-50">Projects</a>
+    <a href="#skills" class="block py-2 px-4 rounded hover:bg-blue-50">Skills</a>
+    <a href="#timeline" class="block py-2 px-4 rounded hover:bg-blue-50">Experience</a>
+    <a href="#why" class="block py-2 px-4 rounded hover:bg-blue-50">Why Novartis</a>
+    <a href="#contact" class="block py-2 px-4 rounded hover:bg-blue-50">Contact</a>
+    <a href="https://docs.google.com/document/d/1aETabsI31YLfTWPscB-n-epd4J7jgjzZski_EHM4KuE/export?format=pdf"
+       target="_blank" rel="noopener" class="hover:text-blue-600">Résumé PDF</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section id="hero" class="relative overflow-hidden bg-gradient-to-b from-white via-blue-50 to-blue-100">
+  <!-- background blobs -->
+  <div class="absolute -top-40 -left-40 w-96 h-96 bg-blue-300/30 rounded-full blur-3xl -z-10"></div>
+  <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-300/30 rounded-full blur-3xl -z-10"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center gap-14 py-28 md:py-40 relative">
+    <!-- text -->
+    <div class="flex-1 text-center md:text-left">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6">
+        Muhammad Hussain
+      </h1>
+      <p class="text-xl sm:text-2xl font-semibold text-blue-800 mb-4">Project Manager at Dialectica</p>
+      <p class="text-lg sm:text-xl mb-6 max-w-2xl mx-auto md:mx-0">I convert multi‑source data into evidence‑based growth strategies and identify process inefficiencies before they become roadblocks.</p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <button id="copyEmailBtn"
+                class="w-full sm:w-auto rounded-xl px-6 py-3 bg-blue-700 text-white font-semibold shadow-lg hover:bg-blue-800 transition">
+          mhzaidi2040@gmail.com (click to copy)
+        </button>
+        <button id="copyPhoneBtn"
+                class="rounded-xl px-8 py-4 bg-blue-700 text-white font-semibold shadow-lg hover:bg-blue-800 transition">
+          (438) 920‑1447 (click to copy)
+        </button>
+        <button id="linkedinBtn"
+                class="rounded-xl px-8 py-4 bg-blue-700 text-white font-semibold shadow-lg hover:bg-blue-800 transition">
+          LinkedIn
+        </button>
+        <a href="https://docs.google.com/document/d/1aETabsI31YLfTWPscB-n-epd4J7jgjzZski_EHM4KuE/edit?usp=sharing"
+           target="_blank" rel="noopener"
+           class="rounded-xl px-8 py-4 bg-blue-50 text-blue-800 font-semibold shadow hover:bg-blue-100 transition">
+          Resume
+        </a>
+      </div>
+    </div>
+
+    <!-- image -->
+    <div class="flex-1 flex justify-center md:justify-end">
+      <img src="me.jpg" alt="Portrait of Muhammad Hussain"
+           class="w-48 sm:w-64 md:w-80 lg:w-96 rounded-full object-cover max-w-full" />
+    </div>
+  </div>
+</section>
+
+<!-- Professional Summary -->
+<section id="summary" class="py-20">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-6">Professional Summary</h2>
+    <p class="text-lg mb-4">I’m a Project Manager and an aspiring<span class="font-semibold">Project Manager</span> who transforms complex market and operational data into clear, actionable growth strategies. At <span class="font-semibold">Dialectica</span>, I’ve enabled Big‑Four/BMM and boutique consultancies to make > $2 B in med‑tech M&A decisions through rigorous competitive intelligence and forecasting. My sweet spot: spotting inefficiencies, quantifying impact, and translating findings for cross‑functional teams.</p>
+
+<p class="text-lg mb-4"><span class="font-semibold">My Sweet Spot:</span> Spotting inefficiencies, quantifying impact, and translating findings for cross‑functional teams.</p>
+
+    <p class="text-lg">English · French · Arabic · Based in Montréal, hailing from Dubai, UAE.</p>
+  </div>
+</section>
+
+<!-- Flagship MedTech Projects -->
+<section id="projects" class="py-20 bg-slate-100">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-10 text-center">Recent Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Project Card -->
+      <article class="bg-white rounded-2xl shadow p-6 flex flex-col">
+        <h3 class="text-xl font-semibold mb-2">MedTech M&A & BD Trends (2025)</h3>
+        <p class="text-sm mb-4 flex-grow">Recruited 10+ VP and C-suite experts to guide a multi billion dollar corporate's M&A strategy.</p>
+      </article>
+      <!-- Project Card -->
+      <article class="bg-white rounded-2xl shadow p-6 flex flex-col">
+        <h3 class="text-xl font-semibold mb-2">PMG Skincare — US & UK Market (2025)</h3>
+        <p class="text-sm mb-4 flex-grow">Facilitated Benchmarking competitors and retailers within professional and medical skin-care market, to aid Corporate Strategy.</p>
+      </article>
+      <!-- Project Card -->
+      <article class="bg-white rounded-2xl shadow p-6 flex flex-col">
+        <h3 class="text-xl font-semibold mb-2">Ophthalmology Diagnostics Scan (2024)</h3>
+        <p class="text-sm mb-4 flex-grow">Faciliated mapping of emergent players vs. Luxottica’s portfolio that helped clients prioritize high‑growth segments.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Matrix -->
+<section id="skills" class="py-20">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-10 text-center">Quick‑View Skills</h2>
+    <div class="grid md:grid-cols-3 gap-6 text-sm font-medium">
+      <div class="bg-white shadow rounded-xl p-6">
+        <h3 class="text-lg font-semibold mb-3">Analytics</h3>
+        <ul class="space-y-2 list-disc list-inside">
+          <li>Regression & time‑series forecasting</li>
+          <li>Market sizing & segmentation</li>
+          <li>ROI & scenario modeling</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6">
+        <h3 class="text-lg font-semibold mb-3">Tools</h3>
+        <ul class="space-y-2 list-disc list-inside">
+          <li>Advanced Excel & SQL</li>
+          <li>Power BI & PowerPoint storytelling</li>
+          <li>MS office, project managment tools (Asana)</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6">
+        <h3 class="text-lg font-semibold mb-3">Soft Skills</h3>
+        <ul class="space-y-2 list-disc list-inside">
+          <li>Stakeholder storytelling & facilitation</li>
+          <li>Cross‑functional collaboration</li>
+          <li>Agile project management</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Timeline -->
+<section id="timeline" class="py-20 bg-slate-100">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-10">Experience</h2>
+    <div class="relative border-l-2 border-blue-600 pl-6 space-y-8">
+      <div>
+        <h3 class="text-lg font-semibold">Business Project Manager — Dialectica <span class="text-sm text-slate-500">(Jun 2024–Present)</span></h3>
+        <ul class="text-sm list-disc list-inside ml-4">
+          <li>Partnered with BCG, Bain & EY on > $2 B confidential med‑tech M&A deals.</li>
+          <li>Delivered market models, expert‑panel synthesis, and risk assessments under 48‑hour turnarounds.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold">Marketing Lead — Ommaty.ca <span class="text-sm text-slate-500">(2022–2024)</span></h3>
+        <ul class="text-sm list-disc list-inside ml-4">
+          <li>Quadrupled monthly active users and reduced CAC 40 % through segmentation analytics and campaign optimization.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold">Consultant — Innovobot <span class="text-sm text-slate-500">(May–Sep 2023)</span></h3>
+        <ul class="text-sm list-disc list-inside ml-4">
+          <li>Cut product‑repair turnaround 25 % via root‑cause analysis of maintenance data.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education & Certifications -->
+<section id="education" class="py-20">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Education & Certifications</h2>
+    <p class="text-lg mb-2"><span class="font-semibold">B.Comm in Marketing</span>, Concordia University</p>
+    <p class="text-lg mb-2"><span class="font-semibold">Lean Six Sigma Green Belt</span> — completion expected <span class="font-semibold">May 2025</span></p>
+    <p class="text-lg"><span class="font-semibold">Microsoft Certified: Data Analyst (Power BI)</span>, 2024</p>
+  </div>
+</section>
+
+<!-- Why pharma -->
+<section id="why" class="py-20">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">What's my dream industry to work in?</h2>
+    <p class="text-lg leading-relaxed">I’ve been fascinated by biology since high school. If I hadn’t pursued business, I’d be in medicine today. The only industry which makes sense for me is pharma, which sits at the intersection of science and scalable impact, improving millions of lives through breakthrough therapies. My analytics toolkit and med‑tech market insight equip me to optimize product portfolios, forecast demand, and uncover white‑space opportunities so patients receive the right medicine, faster. I would love to be part of that impact, for my career to have deep meaning.</p>
+  </div>
+</section>
+
+<!-- Leadership & Service -->
+<section id="service" class="py-20 bg-slate-100">
+  <!-- flex wrapper centers everything inside the section -->
+  <div class="flex flex-col items-center justify-center max-w-4xl mx-auto px-4 text-center"><!-- text-center here -->
+    
+    <h2 class="text-3xl font-bold mb-6">Leadership &amp; Service</h2>
+
+    <div class="space-y-6 w-full">
+      <div>
+        <h3 class="text-lg font-semibold">
+          Executive Committee — Al-Madinah Center, Montréal
+          <span class="text-sm text-slate-500">(Jun 2022 – Present)</span>
+        </h3>
+
+        <!-- list is now centered and its bullets stay tidy thanks to list-inside -->
+        <ul class="text-sm list-disc list-inside mx-auto"><!-- text-center inherited from parent -->
+          <li>Directed 20+ community events (40–100 attendees) while managing $10 K budgets with zero overruns.</li>
+          <li>Co-founded Kids Arabic School; doubled enrollment to 80+ in four semesters by optimizing volunteer workflows.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 bg-blue-600 text-white">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Let’s Talk</h2>
+    <p class="mb-4 text-lg">Reach me at <a href="mailto:mhzaidi2040@gmail.com" class="underline font-semibold">mhzaidi2040@gmail.com</a> or (438)‑920‑1447. On average, I respond within 5 hours.</p>
+    <a href="https://docs.google.com/document/d/1aETabsI31YLfTWPscB-n-epd4J7jgjzZski_EHM4KuE/edit?usp=sharing"
+       target="_blank" rel="noopener"
+       class="inline-block mt-4 rounded-xl bg-white text-blue-700 font-semibold px-8 py-3 shadow hover:bg-blue-50 transition">
+      Resume
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-6 bg-slate-800 text-slate-200 text-center text-sm no-print">© 2025 Muhammad Hussain. All rights reserved.</footer>
+
+<!-- Scripts -->
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn?.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+</script>
+<script>
+  function copyWithFeedback(btn, text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        const orig = btn.innerText;
+        btn.innerText = 'Copied!';
+        setTimeout(() => btn.innerText = orig, 1500);
+      })
+      .catch(err => { console.error('Copy failed:', err); });
+  }
+  document.getElementById('copyEmailBtn')
+    .addEventListener('click', e => copyWithFeedback(e.target, 'mhzaidi2040@gmail.com'));
+  document.getElementById('copyPhoneBtn')
+    .addEventListener('click', e => copyWithFeedback(e.target, '(438) 920-1447'));
+  document.getElementById('linkedinBtn')
+    .addEventListener('click', () => {
+      window.open('https://www.linkedin.com/in/muhammad-hussain-zaidi/', '_blank');
+    });
+</script>
+  </body>
+</html>
